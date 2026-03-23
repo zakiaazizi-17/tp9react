@@ -1,2 +1,5 @@
-export { getCredentials, type Credential } from "./certifications";
-export { getAcademicBackground, type AcademicRecord } from "./education";
+
+export { certifications } from "./certifications";
+export { education } from "./education";
+export { profile } from "./profile";
+export { projects } from "./projects";

@@ -3,7 +3,7 @@ import { Outlet, NavLink } from "react-router-dom";
 // Liste des liens de navigation (évite la duplication)
 const navLinks = [
   { to: "/projects", label: "Projets" },
-  { to: "/experience", label: "Parcours" },
+  { to: "/experience", label: "Compétences" },
   { to: "/education", label: "Formations" },
   { to: "/certifications", label: "Certifications" },
   { to: "/contact", label: "Contact" }

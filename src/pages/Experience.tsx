@@ -1,58 +1,55 @@
 import { Helmet } from "react-helmet-async";
 
-// Données locales
-const experiences = [
-  {
-    title: "Application de gestion de bibliothèque",
-    company: "Projet académique",
-    period: "2024",
-    description: "Développement d’une application Java avec Hibernate et JPA pour gérer les emprunts et retours de livres.",
-    tags: ["Java", "Hibernate", "JPA", "MySQL"]
-  },
-  {
-    title: "Gestion cinéma",
-    company: "Projet personnel",
-    period: "2025",
-    description: "Application full‑stack de gestion de séances et réservations, avec backend Spring Boot (Hibernate, JPA) et frontend React.",
-    tags: ["React", "Spring Boot", "Hibernate", "JPA", "MySQL", "HTML", "CSS"]
-  }
-];
-
 export default function Experience() {
   return (
     <>
       <Helmet>
-        <title>Parcours | Zakia Azizi</title>
-        <meta name="description" content="Projets et expériences en développement full‑stack, Java, Hibernate, React." />
+        <title>Compétences | Zakia Azizi</title>
+        <meta
+          name="description"
+          content="Mes compétences techniques : React, JavaScript, Java EE, Spring Boot, MySQL, Oracle."
+        />
       </Helmet>
 
-      <section className="py-8">
+      {/* Ajout de la classe animate-fade-in pour l'apparition en douceur */}
+      <section className="py-8 animate-fade-in">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold tracking-tight">Parcours & Projets</h2>
+          <h2 className="text-3xl font-bold tracking-tight">Compétences techniques</h2>
           <p className="mt-1 text-muted-foreground">
-            Réalisations académiques et personnelles
+            Technologies maîtrisées en développement front-end et back-end
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2">
-          {experiences.map((exp, idx) => (
-            <article key={idx} className="rounded-xl border bg-card p-5 transition-all hover:shadow-md">
-              <h3 className="text-xl font-semibold">{exp.title}</h3>
-              <p className="text-sm text-muted-foreground">{exp.company} – {exp.period}</p>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                {exp.description}
-              </p>
-              {exp.tags && (
-                <ul className="mt-3 flex flex-wrap gap-2 text-xs">
-                  {exp.tags.map((tag) => (
-                    <li key={tag} className="rounded-full bg-secondary/50 px-2 py-0.5 text-secondary-foreground">
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </article>
-          ))}
+        <div className="grid gap-8 sm:grid-cols-2">
+          {/* Carte Front-end avec dégradé et effets */}
+          <div className="rounded-xl border bg-gradient-to-br from-card to-muted/30 p-5 shadow-md transition-all hover:shadow-xl hover:scale-[1.02]">
+            <h3 className="text-xl font-semibold mb-3">Front-end</h3>
+            <ul className="flex flex-wrap gap-2">
+              {["React", "JavaScript", "HTML", "CSS"].map((tech) => (
+                <li
+                  key={tech}
+                  className="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-white hover:scale-105 cursor-default"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Carte Back-end & BDD avec dégradé et effets */}
+          <div className="rounded-xl border bg-gradient-to-br from-card to-muted/30 p-5 shadow-md transition-all hover:shadow-xl hover:scale-[1.02]">
+            <h3 className="text-xl font-semibold mb-3">Back-end & Base de données</h3>
+            <ul className="flex flex-wrap gap-2">
+              {["JEE", "Spring Boot", "MySQL", "Oracle"].map((tech) => (
+                <li
+                  key={tech}
+                  className="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-white hover:scale-105 cursor-default"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
     </>

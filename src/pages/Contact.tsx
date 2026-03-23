@@ -17,7 +17,7 @@ export default function Contact() {
         </div>
 
         <div className="max-w-xl">
-          <div className="rounded-xl border bg-card p-6 shadow-sm">
+          <div className="rounded-xl border bg-card p-6 shadow-sm transition-all hover:shadow-xl hover:bg-gradient-to-br hover:from-card hover:to-primary/5">
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold">Email</h3>
@@ -25,14 +25,14 @@ export default function Contact() {
                   href="mailto:zakiaazizi17@gmail.com"
                   className="text-primary hover:underline"
                 >
-                  zakiaazizi17@gmail.com
+                  📧 zakiaazizi17@gmail.com
                 </a>
               </div>
               <div>
                 <h3 className="font-semibold">LinkedIn</h3>
                 <p className="text-muted-foreground">
                   <a
-                    href="https://www.linkedin.com/in/zakia-azizi" // à adapter
+                    href="https://www.linkedin.com/in/zakia-azizi-a87277360/" 
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary hover:underline"
@@ -45,7 +45,7 @@ export default function Contact() {
                 <h3 className="font-semibold">GitHub</h3>
                 <p className="text-muted-foreground">
                   <a
-                    href="https://github.com/zakiaazizi-17" // à adapter
+                    href="https://github.com/zakiaazizi-17" 
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary hover:underline"

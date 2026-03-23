@@ -1,6 +1,5 @@
-import type { Certification } from "../data/certifications";
+import type { Certification } from "@/data/certifications";
 
-// Formate "YYYY-MM" → "MM/YYYY"
 function formatDate(dateStr: string): string {
   const [year, month] = dateStr.split("-");
   return `${month}/${year}`;

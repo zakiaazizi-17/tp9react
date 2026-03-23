@@ -5,7 +5,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
   const { title, summary, tags, link, repo } = project;
 
   return (
-    <article className="group rounded-xl border bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <article className="group rounded-xl border bg-card p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-primary/50">
       <h3 className="text-xl font-bold tracking-tight">{title}</h3>
       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
         {summary}
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-primary underline-offset-2 hover:underline"
+             className="inline-flex items-center gap-1 text-primary underline-offset-2 hover:underline hover:gap-2 transition-all"
             >
               Démo →
             </a>
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
               href={repo}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-primary underline-offset-2 hover:underline"
+              className="inline-flex items-center gap-1 text-primary underline-offset-2 hover:underline hover:gap-2 transition-all"
             >
               Code →
             </a>
@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="mb-8">
         <h2 className="text-3xl font-bold tracking-tight">Mes réalisations</h2>
         <p className="mt-1 text-muted-foreground">
-          Une sélection de projets en IA, DevSecOps et développement mobile
+         
         </p>
       </div>
 

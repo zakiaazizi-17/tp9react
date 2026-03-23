@@ -1,13 +1,9 @@
-import { Button } from "@/components/ui/button"
+// src/App.tsx
+import { RouterProvider } from "react-router-dom";
+import { router } from "./app/router";
 
 function App() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <Button className="bg-red-600 hover:bg-red-700 text-white">
-        Bouton personnalisé
-      </Button>
-    </div>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

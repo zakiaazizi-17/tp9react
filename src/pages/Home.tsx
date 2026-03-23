@@ -1,4 +1,4 @@
-import { profile } from "@/data/profile";
+import { profile } from "../data/profile";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -24,7 +24,7 @@ export default function Home() {
         <meta name="description" content="Portfolio de Zakia Azizi, étudiante en systèmes informatiques répartis." />
       </Helmet>
 
-      <div className="grid gap-8 md:grid-cols-2 items-center min-h-[80vh]">
+      <div className="grid gap-8 md:grid-cols-2 items-center min-h-[80vh] animate-fade-in">
         <div className="space-y-5">
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">
             {profile.name}
@@ -65,7 +65,9 @@ export default function Home() {
             👩‍💻
           </span>
         </div>
+        
       </div>
+      
     </>
   );
 }
